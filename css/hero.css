@@ -44,9 +44,9 @@ section{
   border-radius: 10px;
   color: inherit;
 }
-[class*="-blue"] {
+[class*="--blue"] {
   background: #678fff ;
 }
-[class*="-small"] {
+[class*="--small"] {
   font-size: 0.7rem;
 }
