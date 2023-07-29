@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/additional-info.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -28,15 +30,16 @@
   <header class="header">
     <a href="#" class="header__button">⇶</a>
   </header>
-  <div class="hero">
+  <section class="hero">
       <a href="https://duckduckgo.com/about">
-        <img class="hero__image" src="img/logo_homepage.alt.v109.svg"/>
+        <img class="hero__image" src="img/logo_homepage.alt.v109.svg" alt="duck"/>
       </a>
       <form class="hero__search">
-        <input type="search" placeholder="Przeszukuj sieć bez mechanizmów śledzących">
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>inputbutton</button>
+        <label for="search"></label>
+        <input id="search" type="search" placeholder="Przeszukuj sieć bez mechanizmów śledzących">
+        <button type="submit" class="search__button"><img class="fa-icon" src="img/magnifying-glass.svg" alt="search"></button>
       </form>
-      <section>
+      <div>
         <h1>Masz dość śledzenia w Internecie? Możemy pomóc.</h1>
         <p class="section__paragraph">Nie przechowujemy Twoich danych osobowych. Nie chodzimy za Tobą z reklamami. Nie Sledzimy Cię. Nigdy.</p>
         <div class="section__buttons">
@@ -44,13 +47,68 @@
           <button class="buttons__button buttons__button--blue">Dodaj DuckDuckGo do Chrome</button>
         </div>
         <p class="section__paragraph section__paragraph--small">Zaufały nam miliony osób na całym świecie!</p>
-      </section>
+      </div>
+    </section>
+</div>
+<div class="wrapper wrapper--two-color">
+
+
+  <section class="cards">
+    <h2 class="cards__title">Ochrona prywatności dla każdego urządzenia</h2>
+    <div class="card">
+      <img src="img/laptop.svg" alt="laptop"/>
+      <div class="card__text">
+        <h2 class="card__header">
+          Rozszerzenie prywatnej przeglądarki
+        </h2>
+        <p>
+          Przeglądaj tak, jak zawsze, a my zajmiemy się resztą. Otrzymaj w pakiecie funkcję prywatnego wyszukiwania, blokowania mechanizmów śledzących i szyfrowania witryn — w jednym pliku do pobrania dla <a class="card__link--blue" href="https://duckduckgo.com/app">czołowych przeglądarek.</a>
+        </p>
+      </div>
     </div>
+    <div class="card">
+      <img src="img/search.svg" alt="search"/>
+      <div class="card__text">
+        <h2 class="card__header">
+          Prywatna wyszukiwarka
+        </h2>
+        <p>
+          Wyszukuj prywatnie za pomocą naszej aplikacji lub rozszerzenia, dodaj prywatne wyszukiwanie w sieci do ulubionej przeglądarki lub szukaj bezpośrednio na <a class="card__link--blue" href="https://duckduckgo.com">duckduckgo.com.</a>
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/mobile.svg" alt="smartphone"/>
+      <div class="card__text">
+        <h2 class="card__header">
+          Aplikacja prywatnej przeglądarki
+        </h2>
+        <p>
+          Nasza prywatna przeglądarka dla urządzeń mobilnych jest wyposażona w naszą wyszukiwarkę, blokowanie mechanizmów śledzących, wtyczkę wymuszającą szyfrowanie i wiele więcej. Dostępne dla systemu <a class="card__link--blue" href="https://duckduckgo.com/app">iOS i Android.</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+  <div class="wrapper wrapper--turqouise">
+  <section class="additional-info">
+    <h2 class="additional-info__title">Nie przechowujemy Twoich
+      informacji osobistych. Nigdy.</h2>
+    <p class="additional-info__paragraph">Nasza polityka prywatności jest prosta: nie gromadzimy oraz
+      nie udostępniamy żadnych informacji o naszych użytkownikach.</p>
+    <a href="#" class="additional-info__button additional-info__link">Zainstaluj DuckDuckGo</a>
+  </section>
+  </div>
+  <div class="wrapper wrapper--turqouise">
+    <img class="monster-img" src="img/1-monster-v2--pre-animation.svg" alt="monster image">
+  </div>
+
+
     <!-- Add your site or application content here -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-  </div>
+
 </body>
 
 </html>

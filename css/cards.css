@@ -1,0 +1,26 @@
+[class*="card__"] [class*="--blue"] {
+color:#678fff;
+  background-color: transparent;
+}
+.cards{
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ gap:30px;
+}
+.cards__title{
+  margin:0;
+  grid-column: 1/-1;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.card{
+
+  padding: 30px 20px;
+  background-color: #282828;
+  border-radius: 30px;
+}
+.card__text{
+  font-weight: normal;
+}
