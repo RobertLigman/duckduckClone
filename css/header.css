@@ -5,6 +5,43 @@
   justify-content: flex-end;
   margin-top: 30px;
 }
+.header .hamburger-lines .line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+}
+.hamburger-lines {
+  height: 15px;
+  width: 20px;
+position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .header__button{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
 
 }
+.header__button:hover{
+  background-color: #333;
+}
+.horn,.hamburger-lines{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+.horn{
+  width: 20px;
+
+}
+

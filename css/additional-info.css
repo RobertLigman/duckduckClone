@@ -19,6 +19,3 @@
   border-color:transparent;
   transition: all .15s linear;
 }
-.additional-info__link:hover{
-  background-color: #333;
-}
